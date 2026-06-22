@@ -1,10 +1,10 @@
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+    body {font-family: Arial, Helvetica, sans-serif;background-image: url("../backg.jpg");}
     .pagecentre {
     width: 450px;
     
     position: absolute;
-    top: 2250;
+    top: 2640;
     bottom: 0;
     left: 0;
     right: 0;
@@ -16,7 +16,7 @@
     padding-top: 5px;
     padding-bottom: 4530px;
     border-radius: 40px;
-    
+    height: 690;
     margin: auto;
     }
 
@@ -24,345 +24,178 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="icon" type="image/x-icon" href="../icon.png">
 <title>XavoraSMP | Custom Recipies</title>
-
-<div class="pagecentre" id="container_craft"><h1 style="text-align: center;">Akari MC | Custom Recipies</h1><br><br><button onclick='window.location.replace("../")'>Back</button><br><br>
-    <h1>Crafting Table Recipies</h1>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-    <select id="craft_selctor" onchange="update_craft()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Crafting Table Recipies"></optgroup>
-    <option value="all_craft">All Recipies</option>
-
-    </optgroup>
-</select>
-    <!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Crafting Table Recipe</p>
-        <img src="_craft.png"></img>
-    </div>
-    -->
-    
+<div class="pagecentre">
+<h1 style="text-align: center;">Akari MC | Custom Recipies</h1>
+<br><br>
+<button onclick='window.location.replace("../")'>Back</button><br><br>
+<div id="recipie-item">
+    <h2>Great-Axes</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+20% Critical Chance</li>
+        <li>9.0 Base Attack Damage (+1.5/tier)</li>
+        <li>0.5 Attack Speed</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="great-axe.png">
+</div>
+<div id="recipie-item">
+    <h2>Warhammers</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+50% Knockback</li>
+        <li>+20% Stun Chance</li>
+        <li>7.0 Base Bludgeoning Damage (+1/tier)</li>
+        <li>1.0</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="warhammer.png">
+</div>
+<div id="recipie-item">
+    <h2>Spears</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+1.0 Attack Reach</li>
+        <li>+30% Velocity Damage</li>
+        <li>5.0 Base Attack Damage (+1/tier)</li>
+        <li>0.8 Attack Speed</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="spear.png">
+</div>
+<div id="recipie-item">
+    <h2>Morningstars</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+20 Stun Chance</li>
+        <li>3.5 Base Bludgeoning Damage (+1/tier)</li>
+        <li>1.6 Attack Speed</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="morningstar.png">
+</div>
+<div id="recipie-item">
+    <h2>Rapiers</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+30% Armor Penetration</li>
+        <li>+50% Immunity Reduction</li>
+        <li>-200% Knockback</li>
+        <li>2.0 Base Attack Damage (+0.5/tier)</li>
+        <li>4.0 Attack Speed</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="rapier.png">
+</div>
+<div id="recipie-item">
+    <h2>Daggers</h2>
+    <p>Specs</p>
+    <ul>
+        <li>+20% Crit Chance</li>
+        <li>-1.0 Attack Reach</li>
+        <li>4.0 Base Attack Damage (+1/tier)</li>
+        <li>1.8 Attack Speed</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="dagger.png">
+</div>
+<div id="recipie-item">
+    <h2>Trident</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Marine Smithing to be Unlocked to Craft</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="trident.png">
+</div>
+<div id="recipie-item">
+    <h2>Chorus Leather</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Exotic Smithing to be Unlocked to Craft</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="chorus-leather.png">
+</div>
+<div id="recipie-item">
+    <h2>Elytra</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Exotic Smithing to be Unlocked to Craft</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="elytra.png">
+</div>
+<div id="recipie-item">
+    <h2>Glass Vial</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Etching Venom Alchemy to be Unlocked to Craft</li>
+    </ul>
+    <p>Specs</p>
+    <ul>
+        <li>The base Component in the other vial recipies</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="vial.png">
+</div>
+<div id="recipie-item">
+    <h2>Vial 'o' Rot</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Etching Venom Alchemy to be Unlocked to Craft</li>
+    </ul>
+    <p>Specs</p>
+    <ul>
+        <li>Can be thrown or applied to weapons to apply 50% healing reduction</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="vial-o-rot.png">
+</div>
+<div id="recipie-item">
+    <h2>Vial 'o' Poison</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Etching Venom Alchemy to be Unlocked to Craft</li>
+    </ul>
+    <p>Specs</p>
+    <ul>
+        <li>Can be thrown or applied to weapons to apply Poison I (0:30)</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="vial-o-poisen.png">
+</div>
+<div id="recipie-item">
+    <h2>Vial 'o' Holiness</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Etching Venom Alchemy to be Unlocked to Craft</li>
+    </ul>
+    <p>Specs</p>
+    <ul>
+        <li>Can be thrown or applied to weapons to apply 6.0 Instant Radiant Damage</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="vial-o-holiness.png">
+</div>
+<div id="recipie-item">
+    <h2>Vial 'o' Hurt</h2>
+    <p>Requirements</p>
+    <ul>
+        <li>Requires Etching Venom Alchemy to be Unlocked to Craft</li>
+    </ul>
+    <p>Specs</p>
+    <ul>
+        <li>Can be thrown or applied to weapons to apply 4.0 Instant Magic Damage</li>
+    </ul>
+        <h3>Recipie</h3>
+        <img src="vial-o-hurt.png">
+</div>
     <div style="text-align: center;">
         <br><br>
     <p>Akari MC by Lilith (Akari_VT)</p>
     <br>
     </div>
 </div>
-<div class="pagecentre" id="container_smith"><br><br><button onclick='window.location.replace("../")'>Back</button><br><br>
-    <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-    <h1>Smithing Table Recipies</h1>
-    <select id="smith_selctor" onchange="update_smith()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Smithing Table Crafting Recipies">
-    <option value="all_smith">All Recipies</option>
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Smithing Table Recipies</p>
-        <img src="_smith.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-<div class="pagecentre" id="container_stoner"><br><br>
-    <h1>Stone Cutter Recipies</h1>
-    <select id="stoner_selctor" onchange="update_stoner()"><button onclick='window.location.replace("../")'>Back</button><br><br>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-<select>
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Stone Cutter Crafting Recipes">
-    <option value="all_stoner">All Recipies</option>
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Stone Cutter Recipies</p>
-        <img src="_stonecutter.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-<div class="pagecentre" id="container_loom"><br><br>
-    <h1>Loom Recipies</h1>
-    <button onclick='window.location.replace("../")'>Back</button><br><br>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-<select id="_loomselctor" onchange="update_loom()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Loom Crafting Recipies">
-    <option value="all_loom">All Recipies</option>
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Loom Recipies</p>
-        <img src="_loom.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-<div class="pagecentre" id="container_smoke"><br><br>
-    <h1>Smoker Furnice Recipies</h1>
-    <button onclick='window.location.replace("../")'>Back</button><br><br>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-<select id="smoke_selctor" onchange="update_smoke()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Smoker Furnice Smelting Recipies">
-    <option value="all_smoke">All Recipies</option>
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Smoker Furnice Recipies</p>
-        <img src="_smoke.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-<div class="pagecentre" id="container_furnice"><br><br>
-    <h1>Furnice Recipies</h1>
-    <button onclick='window.location.replace("../")'>Back</button><br><br>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-<select id="furnice_selctor" onchange="update_furnice()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Furnice Smelting Recipies">
-    <option value="all_furnice">All Recipies</option> 
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Furnice Recipies</p>
-        <img src="_furnice.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-<div class="pagecentre" id="container_blast"><br><br>
-    <h1>Blast Furnice Recipies</h1>
-    <button onclick='window.location.replace("../")'>Back</button><br><br>
-        <select id="filter" onchange="update_filter()">
-    <option value="container_craft">Crafting Table</option>
-    <option value="container_smith">Smithing Table</option>
-    <option value="container_stoner">Stone Cutter</option>
-    <option value="container_loom">Loom</option>
-    <option value="container_smoke">Smoker</option>
-    <option value="container_furnice">Furnice</option>
-    <option value="container_blast">Blast Furnice</option>
-</select>
-<select id="blast_selctor" onchange="update_blast()">
-    <!--
-    <optgroup label=""></optgroup>
-    -->
-    <!--
-    <option value=""></option>
-    -->
-    <optgroup label="Blast Furnice Smelting Recipies">
-    <option value="all_blast">All Recipies</option>
-    </optgroup>
-</select>
-<!--
-    <div id="dataname">
-        <h3>[name]</h3>
-        <p>Blast Furnice Recipies</p>
-        <img src="_blast.png"></img>
-    </div>
-    -->
-    <div style="text-align: center;">
-        <br><br>
-    <p>Akari MC by Lilith (Akari_VT)</p>
-    <br>
-    </div>
-</div>
-
 <script>
-    function update_filter() {
-    var filter = document.getElementById('filter').value
-    let filter_count = 7;
-        const filter_array = [];
-        let x = 0;
-        while(x != filter_count) {document.getElementById(filter_array[x]).style.display = "none";x = x+1};
-        document.getElementById(filter).style.display = "";
-        }
-    function update_craft() {
-        const rec_array = [];
-        let craft_count = rec_array.length;
-        var rec = document.getElementById('craft_selctor').value;
-        let x = 0;
-        while(x != craft_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_craft") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != craft_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_smith() {
-        let smith_count = 0;
-        const rec_array = ["_smith"];
-        var rec = document.getElementById('smith_selctor').value;
-        let x = 0;
-        while(x != smith_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_smith") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != smith_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_stoner() {
-        let stoner_count = 0;
-        const rec_array = ["_stoner"];
-        var rec = document.getElementById('stoner_selctor').value;
-        let x = 0;
-        while(x != stoner_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_stoner") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != stoner_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_loom() {
-        let loom_count = 0;
-        const rec_array = ["_loom"];
-        var rec = document.getElementById('loom_selctor').value;
-        let x = 0;
-        while(x != loom_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_loom") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != loom_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_smoke() {
-        let smoke_count = 0;
-        const rec_array = ["_smoke"];
-        var rec = document.getElementById('smoke_selctor').value;
-        let x = 0;
-        while(x != smoke_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_smoke") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != smoke_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_furnice() {
-        let furnice_count = 0;
-        const rec_array = [];
-        var rec = document.getElementById('furnice_selctor').value;
-        let x = 0;
-        while(x != furnice_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_furnice") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != furnice_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    function update_blast() {
-        let blast_count = 0;
-        const rec_array = [];
-        var rec = document.getElementById('blast_selctor').value;
-        let x = 0;
-        while(x != blast_count) {document.getElementById(rec_array[x]).style.display = "none";x = x+1};
-        if(rec != "all_blast") {document.getElementById(rec).style.display = "";} else {
-            let x = 0;
-        while(x != blast_count) {document.getElementById(rec_array[x]).style.display = "";x = x+1}
-        }
-    }
-    update_filter()
 </script>
